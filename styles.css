@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+
+:root {
+    --bg-color: #ecf0f3;
+    --bg-shadow-first: #dbdad5;
+    --stroke: #e9ecf0;
+}
+
+body {
+    height: 100vh;
+    width: 100vh;
+    background: var(--bg-color);
+    color: #777;
+    font-family: sans-serif;
+}
+
+.mobile-screen {
+    height: 500px;
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 7px 7px 15px var(--bg-shadow-first),
+    -7px -7px 15px #ffffff;
+    background: var(--bg-color);
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+
+input {
+    height: 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    background-color: white;
+    box-shadow: 0 0 0 3px var(--stroke),2px 2px 5px inset var(--box-shadow-first),-4px -4px 9px inset #ffffff;
+    border-radius: 8px;
+    font-size: 11px;
+    color: #888;
+}
+
+.input2 {
+    height: 40px;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    color: #666;
+}
+
+.dialpod-display {
+    margin-bottom: 5px;
+    padding: 2px     0px;
+    display: flex;
+
+}
+
+.dialpod-display i {
+    position: absolute;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: 80px;
+    color: #888;
+}
+
+.key-pad {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.key-pad div {
+    border: 2px solid transparent;
+    color: #999;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 12px 4px 10px 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.key-pad div :hover {
+    background: #999;
+    border-color: #ffffff;
+    color: white;
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+
+.call-button {
+    width: 100%;
+    padding: 0 8px;
+    display: flex;
+}
+
+.call-button button {
+    height: 40px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px var(--box-shadow-first),
+    -4px -4px 9px #ffffff;
+    background: green;
+    color: var(--bg-color);
+    font-family: sans-serif;
+}
+
+.call-button button:hover {
+    height: 40px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px var(--box-shadow-first),
+    -4px -4px 9px #ffffff;
+    background: var(--bg-color);
+    color: green;
+    font-family: sans-serif;
+}
+
+.call-button-1 {
+    width: 100%;
+    padding: 0 0px;
+    display: contents;
+}
+
+.call-button-1 button {
+    height: 40px;
+    width: 45%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px var(--box-shadow-first),
+    -4px -4px 9px #ffffff;
+    background: var(--bg-color);
+    color: var(--bg-color);
+    font-family: sans-serif;
+    color: #999;
+}
+.call-button-1 button:hover {
+    height: 40px;
+    width: 45%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px var(--box-shadow-first),
+    -4px -4px 9px #ffffff;
+    background: gray;
+    color: var(--bg-color);
+    font-family: sans-serif;
+    color: white;
+}
+
+.call-button-2 {
+    width: 100%;
+    padding: 0 0px;
+    display: contents;
+}
+
+.call-button-2 button {
+    height: 40px;
+    width: 45%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px var(--box-shadow-first),
+    -4px -4px 9px #ffffff;
+    background: red;
+    color: var(--bg-color);
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+
+.call-button-2 button:hover {
+    height: 40px;
+    width: 45%;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px var(--box-shadow-first),
+    -4px -4px 9px #ffffff;
+    background: var(--bg-color);
+    color: red;
+}
